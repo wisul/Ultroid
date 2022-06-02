@@ -1,0 +1,10 @@
+version: "3.10"
+services:
+  worker:
+    build: .
+    environment:
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - SESSION=${SESSION}
+      - REDIS_URI$={REDIS_URI}
+      - REDIS_PASSWORD$={REDIS_PASSWORD}
